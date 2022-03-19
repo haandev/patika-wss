@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "esnext",
+      "declaration": false,
+      "noImplicitAny": false,
+      "removeComments": true,
+      "noLib": false,
+      "lib": ["es2017", "dom"],
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
+      "sourceMap": true,
+      "paths": {
+        "@/*": ["./src/*"]
+      }
+    },
+    "include": ["**/*"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+  }
