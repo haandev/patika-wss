@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import { SocketChannel } from "./SocketChannel";
 
-import { GCCommunicatorDependency, SocketServer } from "./SocketServer";
+import { SocketServer } from "./SocketServer";
 import { SocketClientEvent, SocketClientEventName } from "./SocketClientEvent";
 import { SocketCommunicator } from "./SocketCommunicator";
 
@@ -71,9 +71,7 @@ export class SocketClient {
      */
     this.channel = channel;
   }
-  public setCommunicator(dependency: GCCommunicatorDependency) {
-    this.communicator = new dependency(this.server, this);
-  }
+
   public getCommunicator() {
     return this.communicator
   }
