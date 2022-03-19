@@ -9,6 +9,9 @@
     "build": "webpack --env target=production",
     "build-debug": "webpack --env target=development"
   },
+  "engines": {
+    "node": "16.13.1"
+  },
   "license": "MIT",
   "dependencies": {
     "asciify": "^1.3.5",
